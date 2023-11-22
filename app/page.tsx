@@ -65,7 +65,7 @@ const steps = [
   { title: 'PSC1',date:'2023', description: 'Initiation aux premiers secours' },
 ]
 
-const { activeStep } = useSteps({
+const { activeStep1 } = useSteps({
   index: 1,
   count: steps.length,
 })
@@ -78,6 +78,10 @@ const steps2 = [
   { title: 'Soirée jeu vidéo Melies',date:'2020', description: 'Melies Saint-Etienne' },
 ]
 
+const { activeStep2 } = useSteps({
+  index: 1,
+  count: steps2.length,
+})
 
 
 
@@ -183,7 +187,7 @@ const steps2 = [
   </TabPanel>
 
 
-{/* contenu experience */}
+{/* contenu formation */}
 
     <TabPanel className="contenu">
 
@@ -191,7 +195,7 @@ const steps2 = [
 
 
 
-    <Stepper index={activeStep} orientation='vertical' height='700px' colorScheme='red'gap=''>
+    <Stepper index={activeStep1} orientation='vertical' height='700px' colorScheme='red'gap=''>
       {steps.map((step, index) => (
         <Step key={index}>
           
@@ -229,7 +233,7 @@ const steps2 = [
 {/* contenu experiences */}
     <TabPanel className="contenu">
 
-    <Stepper index={activeStep} orientation='vertical' height='700px' colorScheme='red' gap=''>
+    <Stepper index={activeStep2} orientation='vertical' height='700px' colorScheme='red' gap=''>
       {steps2.map((step, index) => (
         <Step key={index}>
           
