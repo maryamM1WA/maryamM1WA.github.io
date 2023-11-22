@@ -192,7 +192,7 @@ const steps2 = [
 
 
     <Stepper index={activeStep} orientation='vertical' height='700px' colorScheme='red'gap=''>
-      {steps2.map((step, index) => (
+      {steps.map((step, index) => (
         <Step key={index}>
           
           <StepIndicator>
